@@ -1,0 +1,49 @@
+{
+  "name": "@mcpx-digital/json-tools",
+  "version": "0.1.0",
+  "description": "MCP server for local JSON/JSONC: validate, jq-like path get/set, pretty/minify, JSON Schema (Ajv), and diff. Local files and strings only.",
+  "type": "module",
+  "bin": {
+    "json-tools-mcp": "./index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "files": [
+    "index.js",
+    "lib.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "json",
+    "jsonc",
+    "json-schema",
+    "ajv",
+    "mcpx"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheoryofShadows/json-tools-mcp.git"
+  },
+  "homepage": "https://github.com/TheoryofShadows/json-tools-mcp#readme",
+  "author": "TheoryofShadows",
+  "bugs": {
+    "url": "https://github.com/TheoryofShadows/json-tools-mcp/issues"
+  }
+}
